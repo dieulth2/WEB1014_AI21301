@@ -1,0 +1,90 @@
+<!-- Khai báo html5 -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bài tập 1</title>
+    </head>
+    <body>
+        <!-- Tiêu đề chính h1: 1 web chỉ có 1 h1 -->
+        <!-- Để tạo ghi chú: Ctrl + ? -->
+        <h1>Xin chào, Mình là Nguyễn Văn A</h1>
+
+        <!-- Menu (Mục lục): dùng thẻ link (a) -->
+        <p>
+            Mục lục: 
+            <a href="#gioi-thieu">Giới thiệu</a>
+            <a href="#so-thich">Sở thích</a>
+            <a href="#lien-ket">Liên kết hữu ích</a>
+            <a href="#thu-vien-anh">Thư viện ảnh</a>
+            <a href="#media">Âm thanh &amp; Video</a>
+        </p>
+
+        <!-- Tiêu đề phụ: h2 - h6 -->
+        <h2 id="gioi-thieu">Giới thiệu bản thân</h2>
+
+        <!-- đoạn văn: p -->
+        <p>Mình hiện đang là sinh viên năm nhất ngành CNTT
+        <br>Mình rất thích tìm hiểu về lập trình và thiết kế web</p>
+        <!-- Xuống dòng: br -->
+        <h3>Vài điều về mình</h3>
+        <!-- in đậm: stong, b -->
+        <!-- in nghiêng: em, i -->
+        <p>- Mình <b>rất đam mê</b> công nghệ
+        <!-- Chỉ số trên: sup -->
+        <!-- Chỉ số dưới: sub -->
+        <br>- Phòng học lớp: 60m<sup>2</sup>
+        <br>- Công thức hóa học: H<sub>2</sub>O
+        </p>
+
+        <!-- Buổi 2: -->
+        <h2 id="lien-ket">Liên kết hữu ích</h2>
+        <p>
+            - Trang tài liệu HTML mình hay học: 
+            <a href="https://www.w3schools.com/" target="_blank">W3Schools</a>
+            <br> 
+            - Trang học CSS - display: 
+            <a href="https://flexboxfroggy.com/#vi">Flex box froggy</a>
+            <br>
+            - Giới thiệu HTML cơ bản:
+            <a href="../buoi1/index.html">Bài 1 - Phần 1</a>
+        </p>
+
+        <h2 id="so-thich">Sở thích của tôi</h2>
+        <!-- Danh sách không thứ tự: dùng khi các mục ngang hàng, 
+         không cần đếm thứ tự => thẻ ul -->
+        <ul>
+            <li>Du lịch</li>
+            <li>Ăn ngon</li>
+            <li>Mặc đẹp</li>
+            <li>Ngủ</li>
+            <li>Mua sắm</li>
+        </ul>
+
+        <h2 id="thu-vien-anh">Thư viện ảnh</h2>
+        <!-- Danh sách có thứ tự: khi cần theo trình tự => thẻ ol -->
+        <ol>
+            <li>Ảnh cấp 1: </li>
+            <!-- img: thẻ chèn ảnh, src: gắn link ảnh, alt: văn bản thay thế; width: chiều rộng; height: chiều cao -->
+            <img src="12909_bong-hoa-dep-nhat.jpg" alt="Ảnh xinh đẹp của tôi lớp 1" width="200px" height="200px">
+            <li>Ảnh cấp 2: </li>
+            <li>Ảnh cấp 3: </li>
+            <li>Ảnh hiện tại: </li>
+            <li>Ảnh yêu thích:</li>
+        </ol>
+
+
+        <h2 id="media">Âm thanh &amp; video</h2>
+        <p>Bài hát yêu thích: </p>
+        <!-- Audio: thay "nhac.mp3" bằng file thật -->
+        <audio controls>
+            <source src="soundreality-bell-fx-410608.mp3" type="audio/mpeg">
+            Trình duyệt không hỗ trợ thẻ audio
+        </audio>
+        <p>Video yêu thích: </p>
+        <video width="400" controls>
+            <source src="205923.mp4" type="video/mp4">
+                        Trình duyệt không hỗ trợ thẻ video
+        </video>
+        &copy;
+    </body>
+</html>
