@@ -1,0 +1,208 @@
+<!-- Khai báo html5 - luôn luôn nằm ở dòng đầu tiên -->
+<!doctype html>
+<html>
+  <head>
+    <title>Bài tập 1</title>
+  </head>
+  <body>
+    <!-- Tiêu đề chính h1: 1 web chỉ có 1 h1 -->
+    <!-- Để tạo ghi chú: Ctrl + ? -->
+    <h1>Xin chào, Mình là Nguyễn Văn A</h1>
+
+    <!-- Menu (Mục lục): dùng thẻ link (a) -->
+    <p>
+      Mục lục:
+      <a href="#gioi-thieu">Giới thiệu</a>
+      <a href="#so-thich">Sở thích</a>
+      <a href="#lien-ket">Liên kết hữu ích</a>
+      <a href="#thu-vien-anh">Thư viện ảnh</a>
+      <a href="#media">Âm thanh &amp; Video</a>
+      <a href="#dang-ky">Đăng ký thông tin</a>
+    </p>
+
+    <!-- Tiêu đề phụ: h2 - h6 -->
+    <h2 id="gioi-thieu">Giới thiệu bản thân</h2>
+
+    <!-- đoạn văn: p -->
+    <p>
+      Mình hiện đang là sinh viên năm nhất ngành CNTT <br />Mình rất thích tìm
+      hiểu về lập trình và thiết kế web
+    </p>
+    <!-- Xuống dòng: br -->
+    <h3>Vài điều về mình</h3>
+    <!-- in đậm: stong, b -->
+    <!-- in nghiêng: em, i -->
+    <p>
+      - Mình <b>rất đam mê</b> công nghệ
+      <!-- Chỉ số trên: sup -->
+      <!-- Chỉ số dưới: sub -->
+      <br />- Phòng học lớp: 60m<sup>2</sup> <br />- Công thức hóa học:
+      H<sub>2</sub>O
+    </p>
+
+    <!-- Buổi 2: -->
+    <h2 id="lien-ket">Liên kết hữu ích</h2>
+    <p>
+      - Trang tài liệu HTML mình hay học:
+      <a href="https://www.w3schools.com/" target="_blank">W3Schools</a>
+      <br />
+      - Trang học CSS - display:
+      <a href="https://flexboxfroggy.com/#vi">Flex box froggy</a>
+      <br />
+      - Giới thiệu HTML cơ bản:
+      <a href="../buoi1/index.html">Bài 1 - Phần 1</a>
+    </p>
+
+    <h2 id="so-thich">Sở thích của tôi</h2>
+    <!-- Danh sách không thứ tự: dùng khi các mục ngang hàng, 
+         không cần đếm thứ tự => thẻ ul -->
+    <ul>
+      <li>Du lịch</li>
+      <li>Ăn ngon</li>
+      <li>Mặc đẹp</li>
+      <li>Ngủ</li>
+      <li>Mua sắm</li>
+    </ul>
+
+    <h2 id="thu-vien-anh">Thư viện ảnh</h2>
+    <!-- Danh sách có thứ tự: khi cần theo trình tự => thẻ ol -->
+    <ol>
+      <li>Ảnh cấp 1:</li>
+      <!-- img: thẻ chèn ảnh, src: gắn link ảnh, alt: văn bản thay thế; width: chiều rộng; height: chiều cao -->
+      <img
+        src="12909_bong-hoa-dep-nhat.jpg"
+        alt="Ảnh xinh đẹp của tôi lớp 1"
+        width="200px"
+        height="200px"
+      />
+      <li>Ảnh cấp 2:</li>
+      <li>Ảnh cấp 3:</li>
+      <li>Ảnh hiện tại:</li>
+      <li>Ảnh yêu thích:</li>
+    </ol>
+
+    <h2 id="media">Âm thanh &amp; video</h2>
+    <p>Bài hát yêu thích:</p>
+    <!-- Audio: thay "nhac.mp3" bằng file thật -->
+    <audio controls>
+      <source
+        src="../buoi2/soundreality-bell-fx-410608.mp3/"
+        type="audio/mpeg"
+      />
+      Trình duyệt không hỗ trợ thẻ audio
+    </audio>
+    <p>Video yêu thích:</p>
+    <video width="400" controls>
+      <source src="../buoi2/205923.mp4" type="video/mp4" />
+      Trình duyệt không hỗ trợ thẻ video
+    </video>
+
+    <!-- BUỔI 3: Form-->
+    <h2 id="dang-ky">Đăng ký thông tin</h2>
+    <!-- form: "khung chứa" các trường nhập liệu (gửi đi cùng 1 lúc)
+                + action = "đường dẫn URL": URL sẽ NHẬN dữ liệu khi bấm nút gửi
+                + method = "": có 2 phương thức gửi là POST/ GET
+                    POST: gửi ngầm, không hiển thị trên URL, bảo mật dữ liệu
+                    GET: dữ liệu hiển thị ngay trên URL
+        -->
+    <form action="">
+      <!-- fieldset: gom NHIỀU trường liên quan thành 1 nhóm có khung viền riêng -->
+      <fieldset>
+        <!-- legend: tiêu đề của nhóm đó, hiển thị đè lên khung viền của fieldset -->
+        <legend>Thông tin cá nhân</legend>
+        <!-- placeholder: gợi ý nhập, khi nhập sẽ mất gợi ý -->
+        Họ và tên:
+        <input
+          type="text"
+          placeholder="Nhập tên của bạn"
+          value="Huyền Diệu"
+          required
+        /><br /><br />
+        <!-- type="email": kiểm tra định dạng nhập đã đúng là email chưa -->
+        Email: <input type="email" /><br /><br />
+        <!-- type="password": ký tự gõ vào sẽ hiện thành dấu chấm/sao, 
+                 minlength="6": bắt buộc nhập ít nhất 6 ký tự -->
+        Mật khẩu: <input type="password" minlength="6" required /><br /><br />
+        <!-- <label for="phone">: nhãn mô tả cho ô nhập liệu.
+                    Thuộc tính for="phone" phỉa TRÙNG với id của <input>
+                    -->
+        <label for="phone">Số điện thoại:</label>
+        <!-- pattern="[0-9]{10}": chỉ chấp nhận ĐÚNG 10 chữ số 0-9 (biểu thức chính quy)-->
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          pattern="[0-9]{10}"
+          placeholder="0987654321"
+        />
+        <br /><br />
+        <label for="birthday">Ngày sinh</label>
+        <!-- type="date": trình duyệt tự hiển thị lịch -->
+        <input type="date" name="birthday" id="birthday" />
+        <br /><br />
+        <!-- Kiểu html5 hiện đại -->
+        <label for="website">Trang cá nhân (nếu có): </label>
+        <input type="url" id="website" placeholder="http://..." />
+
+        <br /><br />
+
+        <!-- type="color": hiện 1 ô chọn màu -->
+        <label for="color">Màu sắc yêu thích: </label>
+        <!-- value: giá trị MẶC ĐỊNH BAN ĐẦU, có thể chỉnh sửa được -->
+        <input type="color" name="" id="color" value="#2ab296" />
+
+        <br /><br />
+        <label for="number">Con số yêu thích: </label>
+        <!-- type="number": có mũi tên lên xuống thể click tăng giảm số lượng -->
+        <input
+          type="number"
+          name=""
+          id="number"
+          value="2"
+          min="0"
+          max="1000"
+          step="3"
+        />
+
+        <br /><br />
+        <label for="kinhnghiem">Số năm kinh nghiệm lập trình (0-10): </label>
+        <input
+          type="range"
+          name=""
+          id="kinhnghiem"
+          min="0"
+          max="10"
+          value="2"
+        />
+        <!-- type="range": thanh trượt để chọn 1 số trong khoảng
+                    min/ max: giá trị nhỏ/ lớn nhất được phép chọn 
+                    value="2: vị trí mặc định của con trượt khi mới load trang" 
+                    step="2": bước nhảy, ví dụ tăng từ 2 lên 4  
+                -->
+
+        <br /><br />
+        <!-- datalist: Gợi ý nhập liệu - khác <select> ở chỗ người dùng có thể tự gõ 
+                    giá trị KHÁC không có trong ds gợi ý-->
+        <label for="ngonngu">Ngôn ngữ LT yêu thích: </label>
+        <input
+          type="text"
+          name="ngonngu"
+          id="ngonngu"
+          list="goi-y-ngon-ngu"
+          placeholder="Gõ để xem gợi ý ..."
+        />
+        <!-- list="goi-y-ngon-ngu": nối ô input với <datalist> có id TRÙNG TÊN bên dưới
+                    để hiện ds khi gõ -->
+        <datalist id="goi-y-ngon-ngu">
+          <!-- <option value="">: mỗi lựa chọn gợi ý trong ds -->
+          <option value="PHP"></option>
+          <option value="Python"></option>
+          <option value="Java"></option>
+          <option value="Javascript"></option>
+        </datalist>
+      </fieldset>
+
+      <br /><button type="submit">Gửi thông tin</button>
+    </form>
+  </body>
+</html>
