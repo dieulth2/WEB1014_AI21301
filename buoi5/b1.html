@@ -1,0 +1,349 @@
+<!-- Khai báo html5 - luôn luôn nằm ở dòng đầu tiên -->
+<!doctype html>
+<html>
+
+<head>
+  <title>Bài tập 1</title>
+  <!-- INTERNAL CSS - CSS nội bộ: khi CSS chỉ dùng riêng cho 1 trang, 
+     không cần dùng chung với các trang khác
+     <style>: Viết CSS trong <head>
+      Cú pháp: selector { property: value; }
+       + selector (Bộ chọn): phần dùng để chỉ định hoặc tìm xem muốn định dạng cho
+       phần tử HTML nào trên trang web => "Thay đổi giao diện của cái gì?"
+       + Property (thuộc tính): là đặc tính của phần tử HTML
+       => "Thay đổi đặc tính gì và thay đổi như thế nào?"
+     -->
+  <style>
+    /* Selector là TÊN THẺ (h1, h2, a, ...): áp dụng cho MỌI THẺ cùng tên trong cả trang */
+    h1 {
+      /* color: thuộc tính màu chữ */
+      color: rgb(207, 93, 0);
+    }
+
+    h2 {
+      color: #030441;
+    }
+
+    #header-info {
+      /* background-color: thuộc tính MÀU NỀN */
+      background-color: rgb(255, 229, 196);
+      /* padding: khoảng cách bên trong phần tử, giữa nội dung và viền */
+      padding: 20px;
+      /* margin: khoảng cách bên ngoài phần tử, giữa nó và các phần tử khác xung quanh */
+      margin: 20px;
+      /* Nếu chỉ có 1 giá trị thì là khoảng cách cho cả 4 phía */
+    }
+
+    #highlight {
+      color: rgb(207, 93, 0);
+      /* font-weight: thuộc tính ĐỘ ĐẬM NHẠT của chữ */
+      font-weight: bold;
+    }
+
+    /* class: "." */
+    .section-block{
+      background-color: rgb(255, 245, 233);
+    }
+
+    p{
+      color: rgb(7, 5, 64) !important; 
+    }
+
+    p{
+      color: blue;
+    }
+
+    body{
+      padding: 40px;
+    }
+
+    h3{
+      /* padding-top: khoảng cách TRÊN */
+      padding-top: 10px;
+      /* padding-bottom: khoảng cách DƯỚI */
+      padding-bottom: 20px;
+      padding-left: 50px;
+      padding-right: 100px;
+    }
+
+    video{
+      /* padding: 10px 20px; trên dưới là 10; trái phải là 20 */
+      /* padding: 10px 20px 15px; => trên: 10px; trái - phải: 20px; dưới: 15px */
+      padding: 10px 20px 15px 5px; 
+      /* đủ 4 hướng: trên, phải, dưới, trái */
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <div id="header-info">: bọc cả tiêu đề chính và mục lục 
+      vào chung 1 khối (block) -->
+  <div id="header-info">
+    <!-- Tiêu đề chính h1: 1 web chỉ có 1 h1 -->
+    <!-- Để tạo ghi chú: Ctrl + ? -->
+    <h1>Xin chào, Mình là Nguyễn Văn A</h1>
+
+    <!-- Menu (Mục lục): dùng thẻ link (a) -->
+    <p>
+      Mục lục:
+      <a href="#gioi-thieu">Giới thiệu</a>
+      <a href="#so-thich">Sở thích</a>
+      <a href="#lien-ket">Liên kết hữu ích</a>
+      <a href="#thu-vien-anh">Thư viện ảnh</a>
+      <a href="#media">Âm thanh &amp; Video</a>
+      <a href="#dang-ky">Đăng ký thông tin</a>
+      <a href="#bang-diem">Bảng điểm</a>
+    </p>
+  </div>
+
+
+
+  <!-- Tiêu đề phụ: h2 - h6 -->
+  <h2 id="gioi-thieu">Giới thiệu bản thân</h2>
+
+  <!-- đoạn văn: p -->
+  <p>
+    <!-- <span id="highlight">: khác <div> - <span> là thẻ INLINE (không tự xuống dòng) -->
+    Mình hiện đang là sinh viên năm nhất ngành <span id="highlight">Công nghệ thông tin</span> <br />Mình rất thích tìm
+    hiểu về lập trình và thiết kế web
+  </p>
+  <!-- Xuống dòng: br -->
+  <h3>Vài điều về mình</h3>
+  <!-- in đậm: stong, b -->
+  <!-- in nghiêng: em, i -->
+  <p>
+    - Mình <b>rất đam mê</b> công nghệ
+    <!-- Chỉ số trên: sup -->
+    <!-- Chỉ số dưới: sub -->
+    <br />- Phòng học lớp: 60m<sup>2</sup> <br />- Công thức hóa học:
+    H<sub>2</sub>O
+  </p>
+
+  <!-- Buổi 2: -->
+  <div class="section-block">
+    <h2 id="lien-ket">Liên kết hữu ích</h2>
+    <p>
+      - Trang tài liệu HTML mình hay học:
+      <a href="https://www.w3schools.com/" target="_blank">W3Schools</a>
+      <br />
+      - Trang học CSS - display:
+      <a href="https://flexboxfroggy.com/#vi">Flex box froggy</a>
+      <br />
+      - Giới thiệu HTML cơ bản:
+      <a href="../buoi1/index.html">Bài 1 - Phần 1</a>
+    </p>
+  </div>
+
+  <h2 id="so-thich">Sở thích của tôi</h2>
+  <!-- Danh sách không thứ tự: dùng khi các mục ngang hàng, 
+         không cần đếm thứ tự => thẻ ul -->
+  <ul>
+    <li>Du lịch</li>
+    <li>Ăn ngon</li>
+    <li>Mặc đẹp</li>
+    <li>Ngủ</li>
+    <li>Mua sắm</li>
+  </ul>
+
+  <div class="section-block">
+    <h2 id="thu-vien-anh">Thư viện ảnh</h2>
+    <!-- Danh sách có thứ tự: khi cần theo trình tự => thẻ ol -->
+    <ol>
+      <li>Ảnh cấp 1:</li>
+      <!-- img: thẻ chèn ảnh, src: gắn link ảnh, alt: văn bản thay thế; width: chiều rộng; height: chiều cao -->
+      <img src="../buoi2/12909_bong-hoa-dep-nhat.jpg" alt="Ảnh xinh đẹp của tôi lớp 1" width="200px" height="200px" />
+      <li>Ảnh cấp 2:</li>
+      <li>Ảnh cấp 3:</li>
+      <li>Ảnh hiện tại:</li>
+      <li>Ảnh yêu thích:</li>
+    </ol>
+  </div>
+
+  <h2 id="media">Âm thanh &amp; video</h2>
+  <p>Bài hát yêu thích:</p>
+  <!-- Audio: thay "nhac.mp3" bằng file thật -->
+  <audio controls>
+    <source src="../buoi2/soundreality-bell-fx-410608.mp3/" type="audio/mpeg" />
+    Trình duyệt không hỗ trợ thẻ audio
+  </audio>
+  <p>Video yêu thích:</p>
+  <video width="400" controls>
+    <source src="../buoi2/205923.mp4" type="video/mp4" />
+    Trình duyệt không hỗ trợ thẻ video
+  </video>
+
+  <!-- BUỔI 3: Form-->
+  <div class="section-block">
+    <h2 id="dang-ky">Đăng ký thông tin</h2>
+    <!-- form: "khung chứa" các trường nhập liệu (gửi đi cùng 1 lúc)
+                + action = "đường dẫn URL": URL sẽ NHẬN dữ liệu khi bấm nút gửi
+                + method = "": có 2 phương thức gửi là POST/ GET
+                    POST: gửi ngầm, không hiển thị trên URL, bảo mật dữ liệu
+                    GET: dữ liệu hiển thị ngay trên URL
+        -->
+    <form action="">
+      <!-- fieldset: gom NHIỀU trường liên quan thành 1 nhóm có khung viền riêng -->
+      <fieldset>
+        <!-- legend: tiêu đề của nhóm đó, hiển thị đè lên khung viền của fieldset -->
+        <legend>Thông tin cá nhân</legend>
+        <!-- placeholder: gợi ý nhập, khi nhập sẽ mất gợi ý -->
+        Họ và tên:
+        <input type="text" placeholder="Nhập tên của bạn" value="Huyền Diệu" required /><br /><br />
+        <!-- type="email": kiểm tra định dạng nhập đã đúng là email chưa -->
+        Email: <input type="email" /><br /><br />
+        <!-- type="password": ký tự gõ vào sẽ hiện thành dấu chấm/sao, 
+                 minlength="6": bắt buộc nhập ít nhất 6 ký tự -->
+        Mật khẩu: <input type="password" minlength="6" required /><br /><br />
+        <!-- <label for="phone">: nhãn mô tả cho ô nhập liệu.
+                    Thuộc tính for="phone" phỉa TRÙNG với id của <input>
+                    -->
+        <label for="phone">Số điện thoại:</label>
+        <!-- pattern="[0-9]{10}": chỉ chấp nhận ĐÚNG 10 chữ số 0-9 (biểu thức chính quy)-->
+        <input type="tel" name="phone" id="phone" pattern="[0-9]{10}" placeholder="0987654321" />
+        <br /><br />
+        <label for="birthday">Ngày sinh</label>
+        <!-- type="date": trình duyệt tự hiển thị lịch -->
+        <input type="date" name="birthday" id="birthday" />
+        <br /><br />
+        <!-- Kiểu html5 hiện đại -->
+        <label for="website">Trang cá nhân (nếu có): </label>
+        <input type="url" id="website" placeholder="http://..." />
+
+        <br /><br />
+
+        <!-- type="color": hiện 1 ô chọn màu -->
+        <label for="color">Màu sắc yêu thích: </label>
+        <!-- value: giá trị MẶC ĐỊNH BAN ĐẦU, có thể chỉnh sửa được -->
+        <input type="color" name="" id="color" value="#2ab296" />
+
+        <br /><br />
+        <label for="number">Con số yêu thích: </label>
+        <!-- type="number": có mũi tên lên xuống thể click tăng giảm số lượng -->
+        <input type="number" name="" id="number" value="2" min="0" max="1000" step="3" />
+
+        <br /><br />
+        <label for="kinhnghiem">Số năm kinh nghiệm lập trình (0-10): </label>
+        <input type="range" name="" id="kinhnghiem" min="0" max="10" value="2" />
+        <!-- type="range": thanh trượt để chọn 1 số trong khoảng
+                    min/ max: giá trị nhỏ/ lớn nhất được phép chọn 
+                    value="2: vị trí mặc định của con trượt khi mới load trang" 
+                    step="2": bước nhảy, ví dụ tăng từ 2 lên 4  
+                -->
+
+        <br /><br />
+        <!-- datalist: Gợi ý nhập liệu - khác <select> ở chỗ người dùng có thể tự gõ 
+                    giá trị KHÁC không có trong ds gợi ý-->
+        <label for="ngonngu">Ngôn ngữ LT yêu thích: </label>
+        <input type="text" name="ngonngu" id="ngonngu" list="goi-y-ngon-ngu" placeholder="Gõ để xem gợi ý ..." />
+        <!-- list="goi-y-ngon-ngu": nối ô input với <datalist> có id TRÙNG TÊN bên dưới
+                    để hiện ds khi gõ -->
+        <datalist id="goi-y-ngon-ngu">
+          <!-- <option value="">: mỗi lựa chọn gợi ý trong ds -->
+          <option value="PHP"></option>
+          <option value="Python"></option>
+          <option value="Java"></option>
+          <option value="Javascript"></option>
+        </datalist>
+      </fieldset>
+
+      <!-- === BUỔI 4 === -->
+      <fieldset>
+        <legend>Giới tính (Chỉ chọn 1 - Radio)</legend>
+        <!-- Các radio CÙNG name="gioiTinh" mới thuộc cùng 1 nhóm -->
+        <label for="nu"><input type="radio" id="nu" name="gioiTinh" value="Nữ"> Nữ</label>
+        <label for="nam"><input type="radio" id="nam" name="gioiTinh" value="Nam"> Nam</label>
+        <input type="radio" id="khac" name="gioiTinh" value="Khác"> Khác
+      </fieldset>
+
+      <fieldset>
+        <legend>Lĩnh vực quan tâm (chọn nhiều - checkbox)</legend>
+        <input type="checkbox" name="linh-vuc" value="web">Web Developer <br>
+        <input type="checkbox" name="linh-vuc" value="mobile">Mobile App <br>
+        <input type="checkbox" name="linh-vuc" value="ai">AI/ Machine Learning <br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Nơi ở</legend>
+        Tỉnh thành:
+        <select name="tinh" id="tinh">
+          <optgroup label="Miền Bắc">
+            <option value="hn">Hà Nội</option>
+            <option value="bn">Bắc Ninh</option>
+            <option value="ph">Hải Phòng</option>
+          </optgroup>
+          <optgroup label="Miền Nam">
+            <option value="hcm">Hồ Chí Minh</option>
+            <option value="ct">Cần Thơ</option>
+            <option value="dn">Đồng Nai</option>
+          </optgroup>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Lời nhắn (Có thể nhiều dòng)</legend>
+        Lời nhắn gửi tôi <br>
+        <!-- textarea: ô nhập nhiều dòng -->
+        <textarea name="" id="" rows="4" cols="80" placeholder="Nhập lời nhắn ..."></textarea>
+      </fieldset>
+      <!-- Cách 1 Tạo nút gửi -->
+      <br /><button type="submit">Gửi thông tin</button>
+      <!-- Cách 2 Tạo nút gửi-->
+      <input type="submit" value="Gửi cách 2">
+      <!-- Nút đặt lại -->
+      <button type="reset">Làm mới form</button>
+    </form>
+  </div>
+
+  <!-- BẢNG - TABLE -->
+  <h2 id="bang-diem">Bảng điểm học kỳ</h2>
+  <table border="1" cellpadding="6">
+    <!-- caption: Tiêu đề của cả bảng -->
+    <caption>Kết quả học tập kỳ 1</caption>
+    <!-- head: Phần tiêu đề bảng -->
+    <thead>
+      <!-- tr: thẻ tạo dòng/ hàng cho bảng -->
+      <tr>
+        <!-- th: ô tiêu đề, in đậm và canh giữa -->
+        <th>Môn học</th>
+        <th>Điểm quá trình</th>
+        <th>Điểm cuối kỳ</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>HTML</td>
+        <td>8</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>9</td>
+        <td>9.9</td>
+      </tr>
+    </tbody>
+    <!-- tfoot: phần chân bảng, tổng kết -->
+    <tfoot>
+      <tr>
+        <!-- colspan="2: gộp ô này chiếm 2 chỗ của 2 cột liền kề" -->
+        <td colspan="2">Điểm TB</td>
+        <td>9.95</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <!-- Chân trang: footer -->
+  <footer>
+    &copy;2026 Lê Thị Huyền Diệu. Bài tập môn WEB1014
+  </footer>
+</body>
+
+</html>
+
+<!-- QUY TẮC ÁP DỤNG KHI CÓ NHIỀU ĐỊNH DẠNG CHO 1 PHẦN TỬ
+  --- CÁI NÀO CÓ "QUYỀN" CAO HƠN THÌ NHẬN CÁI ĐÓ
+  1. Quyền cao nhất: !important
+  2. #ID
+  3. .CLASS
+  4. TAG (tên thẻ)
+  5. CSS viết sau
+-->
