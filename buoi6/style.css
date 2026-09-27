@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Montserrat;
+    margin: 24px;
+    line-height: 1.5;
+    color: #722104;
+}
+h1{
+    color: #ff6b35;
+}
+
+.demo-inherit{
+    color: darkblue;
+    font-family: Georgia, serif;
+    background-color: #f0f4ff;
+    /* background-color: không kế thừa xuống con */
+    padding: 12px;
+}
+
+h2{
+    color: #c54111;
+    /*viền dưới => border-bottom: kích_thước_viền kiểu_viền màu_viền  */
+    border-bottom: 1.5px solid #c54111;
+    padding-bottom: 6px;
+    margin-top: 40px;
+}
+
+.note{
+    font-style: italic;
+    color: #9a9a9a;
+}
+
+p{
+    margin: 12px 0;
+}
+
+.demo-universal * {
+    border: 1px dashed #722104;
+    padding: 4px;
+    margin: 4px;
+}
+
+/* 3. DESCENDANT SELECTOR - SELECTOR CON CHÁU */
+/* Cú pháp: "selector-cha selector con" - cách nhau bởi dấu cách */
+/* .demo-descendant p: nghĩa là chọn mọi <p> nằm bên trong phần tử có
+class là "demo-descendant", dù p đó nằm ở cấp độ con trực tiếp hay nằm sâu bên 
+trong vài lớp div lồng nhau */
+.demo-descendant p{
+    color: purple;
+    font-weight: bold;
+}
+
+/* 
+- name: theo tên màu tiếng anh
+- hex (#ffffff): phổ biến, mã màu
+- rgb(r,g,b): mỗi giá trị sẽ từ 0-255, khi chỉnh tay => trực quan
+- rgba(r,g,b,a): giống rgb nhưng thêm "a" (alpha) = độ TRONG SUỐT
+giá trị từ 0 (trong suốt hoàn toàn) đến 1 (đục hoàn toàn)
+- hsl(h,s%,l%): HUE (vòng màu 0-360 độ), Saturation(Độ bão hòa),
+Lightness(Độ sáng)- dễ điều chỉnh sáng/tối hơn hex hay rgb
+*/
+
+.color-box{
+    /* display: inline-block; => đưa các khối lên cùng 1 dòng */
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin: 6px;
+    padding: 8px;
+    color: #fff;
+    font-size: 13px;
+    /* Căn giữa chữ: text-align:center */
+    /* Bo góc: border-radius */
+    border-radius: 6px;
+}
+
+.color-name{
+    background-color: tomato;
+}
+
+.color-hex{
+    background-color: #5fc511;
+}
+
+.color-rgb{
+    background-color: rgb(33,150,243);
+}
+
+.color-rgba{
+    background-color: rgba(33,150,243,0.5);
+}
+/* Nền nhạt hơn vì a = 0.5 */
+
+.color-hsl{
+    background-color: hsl(250, 80%, 50%);
+}
