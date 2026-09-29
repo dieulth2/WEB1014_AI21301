@@ -1,0 +1,64 @@
+body {
+    font-family: Calibri, Arial, sans-serif;
+    margin: 24px 50px;
+    line-height: 1.5;
+}
+
+
+/*  Đổi màu nền cho khối "Tính năng nổi bật" (<div id="tinh-nang">) */
+#tinh-nang {
+    background-color: #fdf6ec;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+
+/* Tô đậm, đổi màu cho phần giá tiền (<span class="gia">) */
+.gia {
+    color: #ff6b35;
+    font-weight: bold;
+}
+
+
+/* 
+   Cả 3 luật cùng nhắm vào đoạn <p class="canh-bao" id="canh-bao-chinh">.
+   Thứ tự mạnh dần: thẻ (p) < class (.canh-bao) < id (#canh-bao-chinh)
+   => Dù #canh-bao-chinh viết sau cùng hay trước cũng luôn THẮNG vì id
+      là selector mạnh nhất - kết quả cuối cùng chữ có màu "crimson". */
+p {
+    color: gray;
+}
+.canh-bao {
+    color: orange;
+}
+#canh-bao-chinh {
+    color: crimson; /* <- màu này sẽ là màu hiển thị thật sự */
+}
+
+
+/* Chỉ đổi màu chữ cho các <td> nằm BÊN TRONG <div class="khu-vuc-table">,
+   không ảnh hưởng ô <td> ở bảng khác (nếu trang có nhiều bảng). */
+.khu-vuc-table td {
+    color: darkblue;
+}
+
+
+/* 3 cách viết màu khác nhau cho 3 span: */
+.mau-1 {
+    background-color: tomato;           /* named color */
+    color: white;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+.mau-2 {
+    background-color: #4CAF50;          /* hex code */
+    color: white;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+.mau-3 {
+    background-color: rgb(33, 150, 243); /* rgb() */
+    color: white;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
