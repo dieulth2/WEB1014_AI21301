@@ -1,0 +1,85 @@
+h1{
+    color: rgb(201, 76, 8);
+}
+
+h2{
+    color: rgb(49, 88, 122);
+    border-bottom: 2px solid #eee;
+    padding-bottom: 6px;
+    margin-top: 40px;
+}
+
+h3{
+    color: brown;
+}
+    /* 200px LUÔN LUÔN là 200px, khối này sẽ "Chết" đứng kích thước ở mọi hoàn cảnh  */
+.box{
+    background-color: rgb(4, 102, 102);
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    /* là thuộc tính giữ cho kích thước của 1 khối không bị phình to khi thêm padding
+    hoặc thêm border => không bị vỡ giao diện */
+}
+
+.box-px{
+    width: 200px;
+}
+
+.wrapper-percent{
+    width: 400px;
+    border: 1px dashed #999;
+    padding: 8px;
+}
+.box-percent{
+    width: 50%;
+}
+
+/* em */
+.box-em-outer{
+    font-size: 20px;
+    border: 1px dashed #999;
+    padding: 8px;
+}
+
+.box-em-inter{
+    font-size: 2em; 
+    background-color: #39a50b93;
+    padding: 6px;
+    margin-top: 8px;
+}
+
+/* rem */
+.box-rem-outer{
+    font-size: 20px;
+    border: 1px dashed #999;
+    padding: 8px;
+}
+
+.box-rem-inter{
+    font-size: 2rem; 
+    background-color: #39a50b93;
+    padding: 6px;
+    margin-top: 8px;
+}
+
+.box-vw{
+    width: 40vw;
+}
+
+.box-vh{
+    margin-top: 20px;
+    height: 20vh;
+}
+
+.box-dvh{
+    /* fallback nếu trình duyệt chưa hiểu dvh */
+    height: 80px; 
+    /* trình duyệt hiểu dvh sẽ ưu tiêu dùng dòng này */
+    height: 10dvh; 
+    width: 40vw;
+}
+
+.fs-clamp{
+    font-size: clamp(1rem, 1rem + 2vw, 2.5rem);
+}

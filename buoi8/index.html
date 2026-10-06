@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buổi 8: CSS UNITS & TYPOGRAPHY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Buổi 8: CSS UNITS & TYPOGRAPHY</h1>
+    <h2>1. CSS Units - Đơn vị đo</h2>
+    <p>Mọi kích thước trong CSS (font-size, width, height, margin, ...)
+        đều cần đi kèm 1 đơn vị đo. Có 2 nhóm chính: TUYỆT ĐỐI và TƯƠNG ĐỐI
+    </p>
+
+    <h3>1.1 px - pixel (Đơn vị tuyệt đối)</h3>
+    <p>
+        1px = 1 điểm ảnh trên màn hình.
+    </p>
+
+    <div class="box box-px">Width: 200 px</div>
+
+    <h3>1.2. % - Phần trăm (tương đối theo phần tử CHA)</h3>
+    <p>
+        % tính theo kích thước của PHẦN TỬ CHA chứa nó. 
+        Khối bao ngoài (.wrapper-percent) - cha, khối con (box-percent) - con
+    </p>
+    <div class="wrapper-percent">
+        <div class="box box-percent">Width: 50%</div>
+    </div>
+
+    <h3>1.3. em - tương đối theo cỡ chữ font-size của CHÍNH PHẦN TỬ 
+        (hoặc cha gần nhất)
+    </h3>
+    <p>
+        1em = bằng đúng font-size hiện tại của phần tử đó. 
+        Nếu phần tử cha có font-size lớn, các con dùng em sẽ "phóng to"
+        theo tỷ lệ - gây ra hiệu ứng "Phóng to dây truyền" khi có nhiều 
+        cấp cha con lồng nhau
+    </p>
+    <div class="box-em-outer">
+        Cha: font-size 20px
+        <div class="box-em-inter">
+            Con: font-size 2em = 2 x 20px = 40px
+        </div>
+    </div>
+
+    <h3>1.4. rem - Tương đối theo font-size của thẻ GỐC (html)</h3>
+    <p>
+        1rem = bằng đúng font-size của thẻ &lt;html&gt; (mặc định trình 
+        duyệt là 16px, trừ khi được đổi lại). KHÁC với em, rem KHÔNG bị ảnh 
+        hưởng bởi font-size của cha gần nhất
+    </p>
+    <div class="box-rem-outer">
+        Cha: font-size 20px
+        <div class="box-rem-inter">
+            Con: font-size 2rem = 2 x 16px = 32px (theo html, không theo cha)
+        </div>
+    </div>
+
+    <h3>1.5. vw / vh - Tương đối theo kích thước CỬA SỔ TRÌNH DUYỆT (viewport)</h3>
+    <pre>
+        1 vw = 1% chiều RỘNG cửa sổ trình duyệt. (viewpreort width)
+        1 vh = 1% chiều CAO cửa sổ trình duyệt. (viewport height)
+    </pre>
+    <div class="box box-vw">
+        width: 40vw (= 40% chiều rộng cửa sổ)
+    </div>
+    <div class="box box-vh">
+        width: 20vw (= 20% chiều cao cửa sổ)
+    </div>
+
+    <h3>1.6. dvh / svh / lvh - Tối ưu nhất cho điện thoại</h3>
+    <pre>
+        - svh (small viewport height): tính theo lúc thanh công cụ của trình duyệt
+        hiện (giá trị nhỏ nhất có thể)
+        - lvh (large viewport height): tính theo lúc thanh công cụ ĐÃ ẨN
+        (giá trị lớn nhất có thể)
+        - dvh (dymatic viewport height): TỰ ĐỘNG cập nhật theo đúng kích thước 
+        thực tế ngay lúc đó - thường được dùng thay cho vh
+    </pre>
+    <div class="box box-dvh">
+        Height: 10dvh
+    </div>
+
+    <h3>1.7. clamp() - kichs thước tự co giãn mượn mà k cần media query</h3>
+    <p>
+        Cú pháp: <code>clamp(nhỏ-nhất, lý-tưởng, lớn-nhất)</code>.
+        Đây là kỹ thuật hiện đại giúp chữ/ kích thước tự đổi theo màn hình mà 
+        không cần viết nhiều luật <code>@media</code> (cách làm truyền thống).
+    </p>
+    <p class="fs-clamp">Chữ này dùng clamp(1rem, 1rem + 2vw, 2.5rem)</p>
+</body>
+</html>

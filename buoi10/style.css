@@ -1,0 +1,169 @@
+h1{
+    color: rgb(99, 52, 17);
+}
+
+.font-serif{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.font-sans{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.font-mono{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.font-modern{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.fs-small{
+    font-size: 0.875rem;
+}
+
+.fs-normal{
+    font-size: 1.125rem;
+}
+
+.fs-large{
+    font-size: 1.75rem;
+}
+
+.fw-bold{
+    font-weight: bold;
+}
+
+.fst-italic{
+    font-style: italic;
+}
+
+.lh-tight{
+    line-height: 1.1;
+}
+
+.lh-loose{
+    line-height: 2;
+}
+
+.ta-left{
+    text-align: left;
+}
+
+.ta-center{
+    text-align: center;
+}
+
+.ta-right{
+    text-align: right;
+}
+
+.td-underline{
+    text-decoration: underline;
+}
+
+.td-line-through{
+    text-decoration: line-through;
+}
+
+.tt-uppercase{
+    text-transform: uppercase;
+}
+
+.tt-capitalize{
+    text-transform: capitalize;
+}
+
+.ls-wide{
+    letter-spacing: 5px;
+    padding: 23px;
+}
+
+.wrapper-margin{
+    background-color: #eee;
+    padding: 10px;
+}
+
+.box{
+    background-color: #fff;
+    margin-bottom: 14px;
+}
+
+.margin-auto{
+    width: 250px;
+    margin: 0 auto; 
+    /* trên-dưới:0; trái-phải:auto */
+}
+
+.margin-negative{
+    margin-top: -35px;
+}
+
+.grid-9{
+    display: flex;
+    /* các phần tử con trên trong sẽ xếp nằm ngang
+    trên cùng 1 dòng */
+    gap: 10px; 
+    /* Tạo khoảng cách đều 10px giữa
+    các phần tử con nằm trong
+    (áp dụng cho cả hàng và cột */
+    flex-wrap: wrap;
+    /* cho phép các phần tử con tự động
+    xuống dòng mới khi không gian chiều 
+    ngàng không đủ, thay vì chèn ép lên nhau*/
+}
+
+.border-demo{
+    background-color: #d4800a;
+    padding: 10px;
+    font-size: 12px;
+    text-align: center;
+    width: 140px;
+    box-sizing: border-box;
+}
+
+.bs-none{
+    border: 4px none #333;
+    /* không có viền => có kích thước là 4
+    và có màu => cũng vô hình */
+}
+
+.bs-solid{
+    border: 4px solid #333;
+    /* viền có 1 đường nét liền   */
+}
+
+.bs-dashed{
+    border: 4px dashed #333;
+    /* các đoạn nét đứt */
+}
+
+.bs-dotted{
+    border: 4px dotted #333;
+    /* Chấm tròn nhỏ */
+}
+
+.bs-double{
+    border: 4px double #333;
+    /* 2 đường nét liền song song */
+}
+
+.bs-groove{
+    border: 4px groove #333;
+    /* hiệu ứng CHÌM xuống (3D) */
+}
+
+.bs-ridge{
+    border: 4px ridge #333;
+    /* hiệu ứng nổi gờ lên (3D) */
+}
+
+.bs-inset{
+    border: 4px inset #333;
+    /* làm cả khối LÕM xuống */
+}
+
+.bs-outset{
+    border: 4px outset #333;
+    /* làm cả khối NỔI lên */
+}
