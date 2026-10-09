@@ -1,0 +1,213 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.5;
+    margin: 24px;
+}
+
+.box{
+    background-color: #ededed;
+    color: #1e1e2e;
+    margin-bottom: 14px;
+}
+
+.border-shorthand{
+    /* border: [width] [style] [color] */
+    border: 4px solid #1e1e2e;
+    padding: 10px;
+}
+
+.border-per-side{
+    border-top: 4px solid #1e1e2e;
+    border-right: 4px dashed #1b1bff;
+    border-bottom: 4px dotted #f4bc07;
+    border-left: 4px double #ff1b1b;
+}
+
+.grid-4, .grid-6{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.radius-demo, .bgsize-demo{
+    background-color: #ededed;
+    padding: 10px;
+    width: 140px;
+    font-size: 18px;
+    text-align: center;
+    border: 2px solid #ff1b1b;
+}
+
+.radius-1{
+    border-radius: 8px;
+}
+
+.radius-2{
+    border-radius: 30px 5px;
+    /* góc trên- trái & dưới-phải / trên-phải & dưới-trái */
+}
+
+.radius-3{
+    border-radius: 5px 15px 25px 35px;
+}
+
+.radius-circle{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    /* kích hoạt chế độ FLEXBOX cho khung chứa
+    (phần tử cha), giúp sắp xếp và linh hoạt 
+    điều chỉnh các phần tử con bên trong */
+    display: flex;
+    /* căn chính giữa theo chiều dọc (trên - dưới) */
+    align-items: center;
+    /* căn chính giữa theo chiều ngang (trái - phải) */
+    justify-content: center;
+}
+
+.outline-demo{
+    border: 2px solid #1e1e2e;
+    outline: 3px dashed #ff1b1b;
+    outline-offset: 5px;
+    padding: 14px;
+    margin: 12px;
+}
+
+.sizing-content{
+    /* Mặc định của trình duyệt */
+    box-sizing: content-box;
+    width: 200px;
+    padding: 15px;
+    border: 3px solid #1e1e2e;
+    /* rộng thực tế: 200 + 15*2 + 3*2= 236 px*/
+}
+
+.sizing-border{
+    /* Mặc định của trình duyệt */
+    box-sizing: border-box;
+    width: 200px;
+    padding: 15px;
+    border: 3px solid #17ec1a;
+    /* rộng thực tế: đúng = 200px */
+}
+
+.bg-image-basic{
+    background-image: url("tile.png");
+    color: white;
+    /* Tạo bóng cho chữ */
+    text-shadow: 1px 1px 0.5px black;
+}
+
+.bg-demo{
+    background-image: url("tile.png");
+    height: 100px;
+    border: 2px solid brown;
+    margin-bottom: 24px;
+}
+
+.bg-repeat {
+    background-repeat: repeat;
+    /* mặc định: lặp lại cả 2 chiều ngang và dọc */
+}
+
+.bg-no-repeat {
+    background-repeat: no-repeat;
+}
+
+.bg-repeat-x {
+    background-repeat: repeat-x;
+}
+
+.bg-repeat-y {
+    background-repeat: repeat-y;
+}
+
+.bg-space {
+    background-repeat: space;
+}
+
+.bg-round {
+    background-repeat: round;
+}
+
+.bg-pos-topleft{
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+.bg-pos-topcenter{
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.bg-pos-topright{
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.bg-pos-center{
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.bg-pos-bottomright{
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.bg-pos-px{
+    background-image: url("tile.png");
+    background-repeat: no-repeat;
+    background-position: 20px 40px;
+    /* [cách trái] [cách trên] */
+    height: 100px;
+}
+
+.bgsize-demo{
+    background-image: url(landscape.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    width: 200px;
+}
+.size-auto{
+    background-size: auto;
+}
+
+.size-cover{
+    background-size: cover;
+}
+
+.size-contain{
+    background-size: contain;
+}
+
+.size-custom{
+    background-size: 100px 100px;
+}
+
+.bg-attach-scroll{
+    background-image: url(tile.png);
+    background-attachment: scroll;
+    padding: 20px;
+}
+
+.bg-attach-fixed{
+    background-image: url(tile.png);
+    background-attachment: fixed;
+    padding: 20px;
+}
+
+.multiple-bg{
+    background-image: 
+        url(tile.png),
+        url(landscape.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 12px 12px, center;
+    padding: 20px;
+    background-size: 40px 40px, cover;
+    height: 140px;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}

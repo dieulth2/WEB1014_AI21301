@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Selectors nâng cao & Intermediate CSS</h1>
+    <h2>1. Child selector (Bộ chọn con) so với mặc định</h2>
+    <p>".cha p" cách nhau khoảng trắng
+        => chọn mọi thẻ p nằm bên trong, dù ở cặp con hay cháu<br>
+        Child Selector: ".cha > p" => chỉ chọn là CON TRỰC TIẾP, bỏ
+        qua cháu
+    </p>
+
+    <div class="demo-child">
+        <p> Child selector - con 1</p>
+        <div>
+            <p> Child selector - cháu</p>
+        </div>
+        <p> Child selector - con 2</p>
+    </div>
+
+    <h2>2. Hiệu ứng khi di chuột vào phần tử - HOVER</h2>
+    <div class="demo-hover">Di chuột vào đây để thấy hiệu ứng!!!!!</div>
+
+    <h2>3. Hiệu ứng của thẻ a - LINK</h2>
+    <p>4 trạng thái của link phải viết CSS theo đúng
+        thứ tự L-V-H-A thì mới hoạt động đúng
+    </p>
+    <p><a href="#" class="demo-link">Đây là 1 liên kết - hãy rê chuột và bấm</a></p>
+
+    <h2>4. :root & biến CSS</h2>
+    <p>
+        :root chọn phần tử GỐC của toàn trang
+        (tương đương thẻ html nhưng độ mạnh cao hơn).
+        Thường dùng để khai báo các BIẾN DÙNG CHUNG cho
+        cả trang, giúp đổi 1 chỗ là áp dụng cho MỌI NƠI 
+        dùng biến đó. 
+    </p>
+
+    <div class="demo-root-box-1">Dùng var(--mau-chinh)</div>
+    <div class="demo-root-box-2">Cũng dùng var(--mau-chinh)</div>
+
+    <h2>Navigation Menu</h2>
+    <p>Cách phổ biến nhất</p>
+    <nav class="demo-nav">
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Sản phẩm</a></li>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
