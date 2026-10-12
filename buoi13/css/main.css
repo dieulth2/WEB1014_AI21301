@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 24px;
+    line-height: 1.5;
+}
+
+h1{
+    color: rgb(18, 15, 15);
+}
+
+h2{
+    color: rgb(18, 15, 15);
+    border-bottom: 2px solid #df8600;
+    margin-top: 40px;
+}
+
+.note{
+    color: rgb(107, 107, 107);
+    font-style: italic;
+}
+
+.back{
+    display: inline-block;
+    margin-bottom: 16px;
+    color: #df8600;
+}
+
+.d-block{
+    display: block;
+    background: #f2dab7;
+}
+
+.d-demo>*{
+    border: 1px dashed #df8600;
+    margin: 4px 0;
+    padding: 4px;
+}
+
+.d-inline{
+    display: inline;
+    background: #b1fb80;
+    width: 200px;
+    height: 200px;
+    /* width/ height: bị bỏ qua */
+}
+
+.d-inline-block{
+    display: inline-block;
+    background-color: #80fbf7;
+    width: 200px;
+    height: 50px;
+}
+
+.d-none{
+    display: none;
+}
+
+.card {
+    position: relative;
+    /* làm mốc cho phần tử absolute bên trong */
+    background-color: #80fbf7;
+    width: 260px;
+    height: 140px;
+    border: 1px solid #068a86;
+    padding: 12px;
+}
+
+.badge{
+    position: absolute;
+    /* đặt theo card */
+    top: 0;
+    right: 0;
+    background-color: #e62604;
+    color: #fff;
+    padding: 4px 10px;
+    font-size: 14px;
+    box-shadow: 1px 1px 3px #c2c2c2;
+}
+
+.btn{
+    background: #068a86;
+    color: #fff;
+    border: 0;
+    padding: 12px 24px;
+    cursor: pointer;
+    /* đổi màu mượt trong vòng 0.3 giây */
+    transition: background .3s transform .3s;
+}
+
+.btn:hover{
+    background-color: #fff;
+    color: #068a86;
+    border: 1.5px solid #068a86;
+    transform: translateY(-2px);
+}
+
+code{
+    font-family: Consolas, monospace;
+    background-color: #c2d4e6;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
