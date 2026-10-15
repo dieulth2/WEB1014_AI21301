@@ -26,6 +26,10 @@
     background-color: rgb(228, 184, 6);
 }
 
+.b4{
+    background-color: rgb(6, 6, 228);
+}
+
 .flex-basic{
     display: flex;
 }
@@ -101,4 +105,42 @@
 .ai-center{
     display: flex;
     align-items: center;
+}
+
+.nowrap{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 200px;
+}
+
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    gap: 10px;
+}
+
+.items{
+    display: flex;
+    gap: 10px;
+}
+
+.items .box{
+    height: 100px;
+}
+
+/* chia đều phần không gian còn lại */
+.grow-1{
+    flex: 1;
+    width: auto;
+}
+
+.fixed{
+    flex: 0 0 150px;
+    /* rộng cố định 150px */
+    width: auto;
+}
+
+.seft-end{
+    align-self: flex-end;
 }

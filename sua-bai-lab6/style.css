@@ -1,0 +1,75 @@
+/* Mở rộng: Form đăng nhập căn giữa cả chiều ngang lẫn chiều dọc */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 0;
+}
+
+/*Khu vực "3 dịch vụ" */
+.services { max-width: 1000px; margin: 0 auto; }
+.services h2 { text-align: center; border: 0; }
+.service-list { display: flex; flex-wrap: wrap; gap: 20px; }
+.service { flex: 1 1 250px; padding: 24px; text-align: center; background: #f1f5f9;
+           border: 1px solid #cbd5e1; border-radius: 10px; }
+.service .icon { font-size: 40px; }
+.service h3 { color: #0f3d5e; margin: 8px 0; }
+.service p { margin: 0; color: #475569; }
+
+.form-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e2e8f0;
+    margin-top: 20px;
+    padding: 30px 0;
+}
+
+.login {
+    width: 340px;
+    padding: 28px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, .15);
+}
+
+.login h2 {
+    margin: 0 0 20px;
+    text-align: center;
+    border: 0;
+    color: #0f3d5e;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.field input {
+    padding: 10px;
+    border: 1px solid #94a3b8;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.login button {
+    width: 100%;
+    padding: 12px;
+    border: 0;
+    border-radius: 4px;
+    background: #2563eb;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background .3s;
+}
+
+.login button:hover {
+    background: #1e40af;
+}

@@ -1,0 +1,69 @@
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    height: 300px;
+}
+
+.hero h3{
+    margin: 0;
+    background-color: bisque;
+    padding: 20px 40px;
+}
+
+.navbar{
+    background-color: rgb(8, 5, 106);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logo{
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu a{
+    color: #fff;
+    text-decoration: none;
+    transition: color .3s;
+}
+
+.menu a:hover{
+    color: rgb(181, 52, 20);
+    /* text-shadow: 0 0 1px #fff; */
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card{
+    flex: 1 1 250px;
+    /* giãn đều, tối thiểu 250px rồi xuống dòng*/
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.card h3{
+    margin: 0;
+    color: rgb(7, 7, 142);
+}
+

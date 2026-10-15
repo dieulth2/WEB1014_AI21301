@@ -154,5 +154,41 @@
         <div class="box b2">2</div>
         <div class="box b3">3</div>
     </div>
+
+    <h3>flex-wrap: hộp tự xuống dòng khi hết chiều ngang khung chứa</h3>
+    <p class="note">nowrap: mặc định - giữ tất cả trên 1 hàng duy nhất.
+        Nếu quá nhiều phần tử, tự động co nhỏ các hộp lại cho vừa khung chứa 
+    </p>
+    <div class="demo nowrap">
+        <div class="box b1">1</div>
+        <div class="box b2">2</div>
+        <div class="box b3">3</div>
+        <div class="box b4">4</div>
+    </div>    
+
+    <p class="note">wrap: cho phép các phần tử tự
+        động xuống dòng tiếp theo khi hết chiều 
+        ngang khung chứa
+    </p>
+    <div class="demo wrap">
+        <div class="box b1">1</div>
+        <div class="box b2">2</div>
+        <div class="box b3">3</div>
+        <div class="box b4">4</div>
+    </div>
+
+    <h2>5. Thuộc tính của flex items</h2>
+    <h3>
+        <code>flex: 1;</code> chia đều, 
+        <code>flex: 0 0 150px</code> cố định,
+        <code>align-seft: flex-end</code>
+    </h3>
+
+    <div class="demo tall items">
+        <div class="box b1 fixed">fixed 150px</div>
+        <div class="box b2 grow-1">flex: 1</div>
+        <div class="box b3 grow-1">flex: 1</div>
+        <div class="box b4 seft-end">seft-end</div>
+    </div>
 </body>
 </html>
