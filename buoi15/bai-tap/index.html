@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ví dụ Grid</title>
+    <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="vi-du.css" />
+  </head>
+  <body>
+    <div class="khoi">
+      <h1>Ví dụ 1: Gallery 3 cột</h1>
+      <div class="gallery">
+        <img src="../images/anh1.jpg" alt="Ảnh 1" />
+        <img src="../images/anh2.jpg" alt="Ảnh 2"/>
+        <img src="../images/anh3.jpg" alt="Ảnh 3" />
+        <img src="../images/banner.jpg" alt="Ảnh 4" />
+        <img src="../images/avatar.jpg" alt="Ảnh 5"/>
+        <img src="../images/anh1.jpg" alt="Ảnh 6" />
+      </div>
+      
+      <h1 style="margin-top: 40px">Ví dụ 2: Bố cục trang</h1>
+    </div>
+    <div class="page">
+      <header><h2>Header (grid-column: 1 / -1)</h2></header>
+      <aside>
+        <h3>Sidebar 200px</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Grid</li>
+        </ul>
+      </aside>
+      <main>
+        <h3>Main (1fr)</h3>
+        <p>Phần nội dung chính chiếm toàn bộ chiều rộng còn lại.</p>
+      </main>
+      <footer>Footer (grid-column: 1 / -1)</footer>
+    </div>
+  </body>
+</html>

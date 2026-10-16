@@ -11,14 +11,44 @@ body {
 }
 
 /*Khu vực "3 dịch vụ" */
-.services { max-width: 1000px; margin: 0 auto; }
-.services h2 { text-align: center; border: 0; }
-.service-list { display: flex; flex-wrap: wrap; gap: 20px; }
-.service { flex: 1 1 250px; padding: 24px; text-align: center; background: #f1f5f9;
-           border: 1px solid #cbd5e1; border-radius: 10px; }
-.service .icon { font-size: 40px; }
-.service h3 { color: #0f3d5e; margin: 8px 0; }
-.service p { margin: 0; color: #475569; }
+.services {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.services h2 {
+    text-align: center;
+    border: 0;
+}
+
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service {
+    flex: 1 1 250px;
+    padding: 24px;
+    text-align: center;
+    background: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+}
+
+.service .icon {
+    font-size: 40px;
+}
+
+.service h3 {
+    color: #0f3d5e;
+    margin: 8px 0;
+}
+
+.service p {
+    margin: 0;
+    color: #475569;
+}
 
 .form-login {
     display: flex;
