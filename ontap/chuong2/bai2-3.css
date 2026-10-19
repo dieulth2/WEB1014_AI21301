@@ -1,0 +1,5 @@
+body { font-family: Arial, sans-serif; margin: 0; }
+.header { background: #0f3d5e; color: #fff; padding: 10px 20px; }
+.main { padding: 20px; }
+.footer { background: #f1f5f9; padding: 10px 20px; text-align: center; }
+.khoa { color: #dc2626; font-weight: bold; }

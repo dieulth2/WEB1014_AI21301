@@ -1,0 +1,8 @@
+body { margin: 0; font-family: Arial, sans-serif; }
+.hero { height: 320px; background: url("../images/banner.jpg") center / cover no-repeat; position: relative; color: #fff; }
+.hero h1 { text-align: center; padding-top: 110px; margin: 0; }
+.menu { background: rgba(0, 0, 0, 0.5); }            /* nền trong suốt cho menu */
+.menu ul { list-style: none; margin: 0; padding: 0; display: flex; }
+.menu a { display: block; padding: 16px 24px; color: #fff; text-decoration: none; transition: background .3s; }
+.menu a:hover { background: rgba(255, 255, 255, 0.25); }
+.menu a.active { background: #2563eb; }

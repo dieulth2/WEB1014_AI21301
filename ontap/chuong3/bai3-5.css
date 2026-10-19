@@ -1,0 +1,10 @@
+html { font-size: 16px; }
+body { font-family: Arial, sans-serif; padding: 12px; }
+.d { background: #bfdbfe; border: 1px solid #2563eb; margin-bottom: 8px; padding: 6px; font-size: 14px; }
+.d1 { width: 300px; }
+.d2 { width: 50%; }
+.d3 { width: 20em; }
+.d4 { width: 20rem; }
+.d5 { width: 50vw; }
+.d6 { width: 50vw; height: 20vh; }
+.ketluan { margin-top: 20px; line-height: 1.6; }

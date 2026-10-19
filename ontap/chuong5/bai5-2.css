@@ -1,0 +1,7 @@
+body { margin: 0; font-family: Arial, sans-serif; }
+.tieu-de { position: sticky; top: 0; background: #0f3d5e; color: #fff; padding: 14px 20px; z-index: 10; }
+main { padding: 20px; }
+.the { position: relative; width: 280px; padding: 20px; border: 1px solid #cbd5e1; border-radius: 8px; }
+.huy-hieu { position: absolute; top: 0; right: 0; background: #ef4444; color: #fff; padding: 4px 12px; border-radius: 0 8px 0 8px; font-size: 14px; }
+/* absolute lấy mốc là tổ tiên gần nhất có position khác static (ở đây là .the) */
+.chat { position: fixed; right: 20px; bottom: 20px; padding: 14px 22px; border: 0; border-radius: 999px; background: #2563eb; color: #fff; cursor: pointer; }

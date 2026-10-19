@@ -1,0 +1,13 @@
+:root { --main: #2563eb; --main-dark: #1e40af; }
+body { font-family: Arial, sans-serif; padding: 20px; }
+ul.ds > li { color: var(--main); font-weight: bold; }          /* chỉ li con trực tiếp */
+ul.ds ul li { color: #1f2937; font-weight: normal; }
+.doan::first-letter { font-size: 3rem; font-weight: bold; float: left; line-height: 1; margin-right: 6px; color: var(--main); }
+.doan::first-line { color: #dc2626; }
+/* Thứ tự LVHA: link, visited, hover, active */
+a:link { color: var(--main); }
+a:visited { color: #7c3aed; }
+a:hover { color: #f59e0b; text-decoration: underline; }
+a:active { color: #dc2626; }
+.nut { background: var(--main); color: #fff; border: 0; padding: 10px 20px; border-radius: 6px; }
+.nut:hover { background: var(--main-dark); }

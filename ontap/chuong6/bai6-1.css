@@ -1,0 +1,10 @@
+body { font-family: Arial, sans-serif; padding: 20px; }
+.khung { display: flex; background: #f1f5f9; border: 2px dashed #0f3d5e; margin-bottom: 14px; }
+.cao { height: 130px; }
+.cot { flex-direction: column; justify-content: center; align-items: center; height: 320px; width: 220px; }
+.o { width: 60px; height: 60px; color: #fff; font-weight: bold; display: flex; justify-content: center; align-items: center; }
+.tu-dong { height: auto; }  /* bỏ chiều cao cố định để thấy stretch */
+.o1 { background: #2563eb; } .o2 { background: #f59e0b; } .o3 { background: #10b981; } .o4 { background: #ef4444; }
+table { border-collapse: collapse; margin-top: 20px; }
+th, td { border: 1px solid #94a3b8; padding: 6px 12px; }
+th { background: #0f3d5e; color: #fff; }

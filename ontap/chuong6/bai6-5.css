@@ -1,0 +1,7 @@
+body { font-family: Arial, sans-serif; padding: 20px; }
+.luoi { display: grid; gap: 12px; margin-bottom: 24px; }
+.l3 { grid-template-columns: repeat(3, 1fr); }
+.l4 { grid-template-columns: repeat(4, 1fr); }
+.l121 { grid-template-columns: 1fr 2fr 1fr; }
+.o { height: 80px; color: #fff; font-weight: bold; display: flex; justify-content: center; align-items: center; border-radius: 6px; }
+.o1 { background: #2563eb; } .o2 { background: #f59e0b; } .o3 { background: #10b981; } .o4 { background: #ef4444; }

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form đăng ký</title>
+</head>
+<body>
+  <h1>Đăng ký tài khoản</h1>
+  <form action="#" method="post">
+    <p><label for="hoten">Họ tên:</label><br><input type="text" id="hoten" name="hoten" required></p>
+    <p><label for="email">Email:</label><br><input type="email" id="email" name="email" required></p>
+    <p><label for="matkhau">Mật khẩu:</label><br><input type="password" id="matkhau" name="matkhau" required minlength="6"></p>
+    <p>Giới tính:<br>
+      <input type="radio" id="nam" name="gioitinh" value="nam" required><label for="nam">Nam</label>
+      <input type="radio" id="nu" name="gioitinh" value="nu"><label for="nu">Nữ</label>
+      <input type="radio" id="khac" name="gioitinh" value="khac"><label for="khac">Khác</label>
+    </p>
+    <p>Sở thích:<br>
+      <input type="checkbox" id="doc" name="sothich" value="doc"><label for="doc">Đọc sách</label>
+      <input type="checkbox" id="nhac" name="sothich" value="nhac"><label for="nhac">Nghe nhạc</label>
+      <input type="checkbox" id="the-thao" name="sothich" value="the-thao"><label for="the-thao">Thể thao</label>
+    </p>
+    <p><label for="tinh">Tỉnh/thành:</label><br>
+      <select id="tinh" name="tinh">
+        <option value="">-- Chọn --</option>
+        <option value="hn">Hà Nội</option>
+        <option value="dn">Đà Nẵng</option>
+        <option value="hcm">TP. Hồ Chí Minh</option>
+      </select>
+    </p>
+    <p><label for="ghichu">Ghi chú:</label><br><textarea id="ghichu" name="ghichu" rows="4" cols="40"></textarea></p>
+    <p><input type="submit" value="Gửi"> <input type="reset" value="Làm lại"></p>
+  </form>
+</body>
+</html>

@@ -1,0 +1,6 @@
+body { font-family: Arial, sans-serif; padding: 20px; }
+table { border-collapse: collapse; width: 100%; }
+caption { font-weight: bold; font-size: 20px; margin-bottom: 10px; }
+th, td { border: 1px solid #94a3b8; padding: 10px; text-align: center; }
+thead th { background: #0f3d5e; color: #fff; }
+tbody th { background: #f1f5f9; }

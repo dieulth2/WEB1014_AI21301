@@ -1,0 +1,5 @@
+body { font-family: Arial, sans-serif; background: #f1f5f9; }
+.card { width: 300px; padding: 20px; border: 3px solid #2563eb; margin: 30px auto; background: #fff; }
+.c1 { box-sizing: content-box; }  /* width chỉ tính phần nội dung */
+.c2 { box-sizing: border-box; }   /* width gồm cả padding và border */
+.note { text-align: center; color: #64748b; }

@@ -1,0 +1,14 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; }
+.trang { display: grid; grid-template-columns: 200px 1fr; grid-template-rows: auto 1fr auto; gap: 10px; min-height: 100vh; }   /* Grid cho khung trang */
+.dau, .chan { grid-column: 1 / -1; }
+.dau { display: flex; justify-content: space-between; align-items: center; padding: 12px 24px; background: #0f3d5e; }  /* Flex cho navbar */
+.logo { color: #fff; font-size: 22px; font-weight: bold; text-decoration: none; }
+.dau ul { display: flex; gap: 18px; list-style: none; margin: 0; padding: 0; }
+.dau ul a { color: #fff; text-decoration: none; }
+.ben { background: #f1f5f9; padding: 16px; }
+.chinh { padding: 16px; }
+.ds-card { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }                 /* Grid cho danh sách card */
+.the { border: 1px solid #cbd5e1; border-radius: 8px; padding: 14px; }
+.chan { background: #0f3d5e; color: #fff; padding: 14px; text-align: center; align-self: end; }
+@media (max-width: 700px) { .trang { grid-template-columns: 1fr; } .ds-card { grid-template-columns: 1fr; } }

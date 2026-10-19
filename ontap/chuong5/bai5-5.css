@@ -1,0 +1,8 @@
+body { font-family: Arial, sans-serif; padding: 40px; }
+.hang { display: flex; gap: 60px; align-items: center; }
+.the-sp { width: 180px; padding: 30px 20px; border: 1px solid #cbd5e1; border-radius: 10px; text-align: center; transition: transform .3s, box-shadow .3s; }
+.the-sp:hover { transform: scale(1.05); box-shadow: 0 10px 24px rgba(0,0,0,.18); }
+.quay { width: 60px; height: 60px; border: 6px solid #cbd5e1; border-top-color: #2563eb; border-radius: 50%; animation: spin 1s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.dap { padding: 14px 28px; border: 0; border-radius: 8px; background: #ef4444; color: #fff; font-size: 16px; animation: pulse 1.2s ease-in-out infinite; }
+@keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.12); } }

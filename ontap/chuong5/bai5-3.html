@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>float và clearfix</title>
+  <link rel="stylesheet" href="bai5-3.css">
+</head>
+<body>
+  <h2>Cha chỉ có con float (bị sập chiều cao)</h2>
+  <div class="cha loi"><img src="../images/anh1.jpg" alt="Ảnh float trái" width="150"></div>
+  <h2>Sửa bằng clearfix</h2>
+  <div class="cha clearfix"><img src="../images/anh2.jpg" alt="Ảnh float trái" width="150">
+    <p>Chữ chảy quanh ảnh nhờ float: left. Đoạn văn này dài thêm để minh họa hiệu ứng bao quanh ảnh trong bố cục.</p></div>
+  <h2>Sửa bằng overflow: hidden</h2>
+  <div class="cha ovf"><img src="../images/anh3.jpg" alt="Ảnh float trái" width="150">
+    <p>Cha có overflow: hidden nên bao trọn phần tử con float.</p></div>
+  <p>Đoạn này nằm sau và không bị chảy vào bên dưới ảnh nhờ clearfix.</p>
+</body>
+</html>

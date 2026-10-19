@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox cơ bản</title>
+  <link rel="stylesheet" href="bai6-1.css">
+</head>
+<body>
+  <h1>Flexbox: justify-content, align-items, flex-direction</h1>
+  <h3><code>justify-content: flex-start</code></h3>
+  <div class="khung jc" style="justify-content: flex-start;"><div class="o o1">1</div><div class="o o2">2</div><div class="o o3">3</div><div class="o o4">4</div></div>
+  <h3><code>justify-content: center</code></h3>
+  <div class="khung jc" style="justify-content: center;"><div class="o o1">1</div><div class="o o2">2</div><div class="o o3">3</div><div class="o o4">4</div></div>
+  <h3><code>justify-content: flex-end</code></h3>
+  <div class="khung jc" style="justify-content: flex-end;"><div class="o o1">1</div><div class="o o2">2</div><div class="o o3">3</div><div class="o o4">4</div></div>
+  <h3><code>justify-content: space-between</code></h3>
+  <div class="khung jc" style="justify-content: space-between;"><div class="o o1">1</div><div class="o o2">2</div><div class="o o3">3</div><div class="o o4">4</div></div>
+  <h3><code>justify-content: space-around</code></h3>
+  <div class="khung jc" style="justify-content: space-around;"><div class="o o1">1</div><div class="o o2">2</div><div class="o o3">3</div><div class="o o4">4</div></div>
+  <h3><code>justify-content: space-evenly</code></h3>
+  <div class="khung jc" style="justify-content: space-evenly;"><div class="o o1">1</div><div class="o o2">2</div><div class="o o3">3</div><div class="o o4">4</div></div>
+
+  <h3><code>align-items: stretch</code></h3>
+  <div class="khung cao" style="align-items: stretch;"><div class="o o1 tu-dong">1</div><div class="o o2 tu-dong">2</div><div class="o o3 tu-dong">3</div><div class="o o4 tu-dong">4</div></div>
+  <h3><code>align-items: flex-start</code></h3>
+  <div class="khung cao" style="align-items: flex-start;"><div class="o o1">1</div><div class="o o2">2</div><div class="o o3">3</div><div class="o o4">4</div></div>
+  <h3><code>align-items: center</code></h3>
+  <div class="khung cao" style="align-items: center;"><div class="o o1">1</div><div class="o o2">2</div><div class="o o3">3</div><div class="o o4">4</div></div>
+  <h3><code>align-items: flex-end</code></h3>
+  <div class="khung cao" style="align-items: flex-end;"><div class="o o1">1</div><div class="o o2">2</div><div class="o o3">3</div><div class="o o4">4</div></div>
+
+  <h3><code>flex-direction: column</code> (trục chính thành dọc; justify-content căn dọc, align-items căn ngang)</h3>
+  <div class="khung cot" style=""><div class="o o1">1</div><div class="o o2">2</div><div class="o o3">3</div><div class="o o4">4</div></div>
+  <table>
+    <tr><th>Giá trị justify-content</th><th>Quan sát</th></tr>
+    <tr><td>flex-start</td><td>Các ô dồn sang đầu hàng (trái)</td></tr>
+    <tr><td>center</td><td>Các ô nằm giữa</td></tr>
+    <tr><td>flex-end</td><td>Dồn sang cuối hàng (phải)</td></tr>
+    <tr><td>space-between</td><td>Ô đầu và cuối sát mép, khoảng cách đều ở giữa</td></tr>
+    <tr><td>space-around</td><td>Khoảng trống đều quanh mỗi ô (mép bằng nửa giữa)</td></tr>
+    <tr><td>space-evenly</td><td>Mọi khoảng trống (kể cả mép) bằng nhau</td></tr>
+  </table>
+</body>
+</html>

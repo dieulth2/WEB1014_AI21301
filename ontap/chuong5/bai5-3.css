@@ -1,0 +1,5 @@
+body { font-family: Arial, sans-serif; padding: 20px; }
+.cha { border: 3px solid #2563eb; margin-bottom: 20px; padding: 6px; }
+.cha img { float: left; margin: 0 14px 6px 0; }
+.clearfix::after { content: ""; display: block; clear: both; }
+.ovf { overflow: hidden; }

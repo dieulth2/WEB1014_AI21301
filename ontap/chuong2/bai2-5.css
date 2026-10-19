@@ -1,0 +1,4 @@
+body { font-family: Arial, sans-serif; padding: 20px; }
+.note { background: #fef9c3; padding: 8px; }
+.warning { color: #dc2626; }
+#intro { font-weight: bold; font-size: 22px; }

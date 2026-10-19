@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liên hệ - Nguyễn An</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="dau">
+    <a class="logo" href="index.html">Nguyễn An</a>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+        <li><a href="lien-he.html" class="active">Liên hệ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="noi-dung">
+    <h1>Liên hệ</h1>
+    <form class="form-lien-he" action="#" method="post">
+      <div class="truong"><label for="ten">Họ tên</label><input type="text" id="ten" name="ten" required></div>
+      <div class="truong"><label for="mail">Email</label><input type="email" id="mail" name="mail" required></div>
+      <div class="truong"><label for="chu-de">Chủ đề</label>
+        <select id="chu-de" name="chu-de"><option>Hợp tác</option><option>Góp ý</option><option>Khác</option></select></div>
+      <div class="truong"><label for="nd">Nội dung</label><textarea id="nd" name="nd" rows="5" required></textarea></div>
+      <div class="truong"><span>Nhận phản hồi qua:</span>
+        <label><input type="radio" name="qua" value="mail" checked> Email</label>
+        <label><input type="radio" name="qua" value="dt"> Điện thoại</label></div>
+      <div class="hang-nut"><button type="reset" class="nut phu">Làm lại</button><button type="submit" class="nut">Gửi</button></div>
+    </form>
+  </main>
+  <footer class="chan">&copy; 2026 Nguyễn An • Mini project WEB1014</footer>
+</body>
+</html>

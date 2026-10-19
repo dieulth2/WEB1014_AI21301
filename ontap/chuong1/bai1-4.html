@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hình ảnh, audio, video</title>
+</head>
+<body>
+  <h1>Hình ảnh, audio và video</h1>
+  <h2>Ảnh nội bộ với kích thước khác nhau</h2>
+  <img src="../images/anh1.jpg" alt="Ảnh 1 kích thước 300x200" width="300" height="200">
+  <img src="../images/anh1.jpg" alt="Ảnh 1 kích thước 150x100" width="150" height="100">
+  <h2>Ảnh từ địa chỉ bên ngoài</h2>
+  <img src="https://www.w3schools.com/html/img_girl.jpg" alt="Ảnh ví dụ từ w3schools" width="200">
+  <h2>Cắt (crop) phần quan trọng bằng object-fit</h2>
+  <img src="../images/anh2.jpg" alt="Ảnh cắt vuông" width="200" height="200" style="object-fit: cover;">
+  <img src="../images/anh3.jpg" alt="Ảnh bị méo (không dùng object-fit)" width="200" height="200">
+  <h2>Audio</h2>
+  <audio controls>
+    <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+    <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+    Trình duyệt không hỗ trợ audio.
+  </audio>
+  <h2>Video</h2>
+  <video controls width="400" poster="../images/anh3.jpg">
+    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    Trình duyệt không hỗ trợ video.
+  </video>
+</body>
+</html>

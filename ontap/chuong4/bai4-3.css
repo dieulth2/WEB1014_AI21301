@@ -1,0 +1,4 @@
+body { margin: 0; font-family: Arial, sans-serif; }
+.banner { height: 300px; background-image: url("../images/banner.jpg"); background-size: cover; background-position: center; background-repeat: no-repeat; }
+.lop-phu { height: 100%; background: rgba(0, 0, 0, 0.45); color: #fff; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+.ghi-chu { padding: 20px; color: #64748b; }

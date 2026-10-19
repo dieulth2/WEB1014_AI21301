@@ -1,0 +1,6 @@
+body { font-family: Arial, sans-serif; padding: 20px; }
+.sp { display: inline-block; width: 100px; height: 60px; background: #bfdbfe; margin: 4px; text-align: center; line-height: 60px; }
+.dv { display: inline; background: #fde68a; padding: 6px; margin: 4px; }
+.box { background: #bbf7d0; padding: 10px; margin: 4px 0; }
+.b { display: none; }
+.c { visibility: hidden; }

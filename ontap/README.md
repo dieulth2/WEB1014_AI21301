@@ -1,0 +1,1 @@
+Xen từ trang chủ index.html, sau đó xem lần lượt các chương, cuối cùng là mini-project

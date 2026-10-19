@@ -1,0 +1,7 @@
+/* Độ ưu tiên: thẻ (0,0,1) < class (0,1,0) < p.note (0,1,1) < #id (1,0,0) */
+p { color: blue; }
+.note { color: green; }
+p.note { color: orange; }
+#intro { color: red; }
+/* Đổi thứ tự các quy tắc trên không làm đổi kết quả vì specificity khác nhau.
+   Thứ tự chỉ quyết định khi hai quy tắc có specificity bằng nhau. */
