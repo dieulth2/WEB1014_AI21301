@@ -1,0 +1,294 @@
+/* ===== Y2: CSS nền tảng ===== */
+:root {
+  --main: #8b4513; /* màu chính (nâu cà phê) */
+  --main-dark: #5c2e0c;
+  --nen: #faf6f1; /* màu nền */
+  --chu: #2b2118; /* màu chữ */
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--chu);
+  background: var(--nen);
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+h1,
+h2,
+h3 {
+  line-height: 1.3;
+}
+
+/* ===== Y3: Thanh menu Flexbox + sticky ===== */
+.dau {
+  /* Luôn hiển thị thanh navbar ở đầu khi cuộn trang  */
+  position: sticky;
+  top: 0;
+  /* giá trị z-index càng cao thì vị trí (chồng lên nhau) càng cao */
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 2rem;
+  background: var(--main-dark);
+}
+.logo {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.logo:hover {
+  color: #f1c40f;
+}
+.menu {
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu > li > a {
+  /* selector con trực tiếp */
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+.menu > li > a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.menu > li > a.active {
+  background: var(--main);
+}
+
+/* ===== Y4: Banner ===== */
+.banner {
+  min-height: 360px;
+  background-image: url("images/banner.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+.lop-phu {
+  min-height: 360px;
+  background: rgba(0, 0, 0, 0.25);
+  color: #fff;
+  text-align: center;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 5rem;
+}
+.lop-phu h1 {
+  margin: 0 0 0.5rem;
+  font-size: 2.5rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+.lop-phu p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+/* ===== Khối nội dung chung ===== */
+.khoi {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem;
+}
+.khoi-nen {
+  max-width: none;
+  background: #f1e6da;
+}
+.khoi h2 {
+  margin-top: 0;
+  color: var(--main-dark);
+}
+.khoi-nen > h2,
+.khoi-nen > form {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===== Y5: Thực đơn Grid + badge + hover ===== */
+.thuc-don {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+.mon {
+  position: relative; /* làm mốc cho huy hiệu absolute */
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid #e3d5c6;
+  border-radius: 10px;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+.mon:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+.mon img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+}
+.mon h3 {
+  margin: 0.75rem 0 0.25rem;
+}
+.mon .gia {
+  margin: 0;
+  font-weight: bold;
+  color: var(--main);
+}
+.mon .gia::before {
+  content: "Giá: ";
+  font-weight: normal;
+}
+.mon:last-child .gia::after {
+  content: " (tráng miệng)";
+  font-weight: normal;
+  font-size: 0.85rem;
+}
+.moi {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 1;
+  padding: 0.15rem 0.7rem;
+  background: #d9381e;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: bold;
+  border-radius: 999px;
+}
+
+/* ===== Y6: Bảng giờ mở cửa ===== */
+.bang {
+  border-collapse: collapse;
+  width: 100%;
+  background: #fff;
+}
+.bang caption {
+  text-align: left;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+.bang th,
+.bang td {
+  border: 1px solid #cdb8a3;
+  padding: 0.6rem 0.9rem;
+  text-align: left;
+}
+.bang thead th {
+  background: var(--main-dark);
+  color: #fff;
+}
+.bang td[colspan] {
+  text-align: center;
+  font-style: italic;
+}
+
+/* ===== Y7: Form đặt bàn (thẻ gọn, Grid 2 cột) ===== */
+.khoi-nen > h2 {
+  text-align: center;
+}
+.khoi-nen > h2::after {
+  /* gạch nhấn dưới tiêu đề */
+  content: "";
+  display: block;
+  width: 48px;
+  height: 3px;
+  margin: 0.4rem auto 0;
+  background: var(--main);
+  border-radius: 2px;
+}
+.form-dat-ban {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.9rem 1rem;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(92, 46, 12, 0.15);
+}
+.truong {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.truong.rong {
+  grid-column: 1 / -1;
+}
+.truong label {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: var(--main-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* Thay vì đặt tên class hoặc id thì có thể gọi đến trường/ loại input */
+.truong input[type="text"],
+.truong input[type="tel"],
+.truong input[type="date"],
+.truong select,
+.truong textarea {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #e3d5c6;
+  border-radius: 8px;
+  font: inherit;
+  background: var(--nen);
+  transition:
+    border-color 0.3s,
+    box-shadow 0.3s;
+}
+
+.nut {
+  justify-self: end;
+  padding: 0.7rem 2.5rem;
+  border: 0;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--main), var(--main-dark));
+  color: #fff;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+.nut:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(92, 46, 12, 0.35);
+}
+
+/* ===== Footer ===== */
+.chan {
+  background: var(--main-dark);
+  color: #f3e7da;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+.chan p {
+  margin: 0.25rem 0;
+}
